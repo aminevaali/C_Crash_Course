@@ -12,7 +12,7 @@ To work with files in c you need to include `stdlib.h` in your program
 
 ## How to open a file?
 
-Your user space program can't access files. And must grant permission from the operating system. Thus there is a function named `fopen()` that asks the os and opens a file in your program.
+Your user space program can't access files directly. And must grant permission from the operating system to access a file. Thus there is a function named `fopen(filePath, mode)` that asks the OS and opens a file in your program. `filePath` is the relative or absolute path of the file. and `mode` is the way our program treats with that file.
 
 
 e.g. Making a file named `myFile.txt` with the content of "Hello World"
